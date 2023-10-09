@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Jogos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        function mudarPagina() {
+            window.location.href = "./html/signup.html"
+        }
+
+        function JogoUm() {
+            window.open('https://www.escolagames.com.br/jogos/ordem-alfabetica')
+        }
+
+        function JogoDois() {
+            window.open('https://www.escolagames.com.br/jogos/forma-palavras')
+        }
+
+        function JogoTres() {
+            window.open('https://www.escolagames.com.br/jogos/cola-silabas')
+        }
+
+        function JogoQuatro() {
+            window.open('https://www.escolagames.com.br/jogos/quebra-cabeca-mapas')
+        }
+
+        function JogoCinco() {
+            window.open('https://www.escolagames.com.br/jogos/ba-be-bi')
+        }
+
+        function JogoSeis() {
+            window.open('https://www.escolagames.com.br/jogos/abaco-online')
+        }
+
+        function JogoSete() {
+            window.open('https://www.escolagames.com.br/jogos/bruxa-dos-acentos')
+        }
+
+        function JogoOito() {
+            window.open('https://www.escolagames.com.br/jogos/material-dourado')
+        }
+
+        function JogoNove() {
+            window.open('https://www.escolagames.com.br/jogos/sistema-solar')
+        }
+
+        function JogoDez() {
+            window.open('https://www.escolagames.com.br/jogos/classificacao-dos-animais')
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        :root {
+            --card_width: 250px;
+            --row_increment: 10px;
+            --card_border_radius: 16px;
+            --card_small: 26;
+            --card_medium: 33;
+            --card_large: 45;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            padding-top: 5px;
+            background-image: url(../images/fundo.png);
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            padding: 10px 1%;
+        }
+
+        header>.interface {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            margin-left: 30px;
+            font-size: 2.5rem;
+            /* 40px */
+            font-weight: bold;
+            /* negrito */
+            color: #000000;
+        }
+
+        .btn-login button {
+            padding: 10px 40px;
+            margin-left: 650px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #ecb959;
+            border: 0;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .section {
+            padding: 1rem;
+            font-size: 1.7rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .pin_container {
+            margin: 0;
+            padding: 0;
+            width: 80vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, var(--card_width));
+            grid-auto-rows: var(--row_increment);
+            justify-content: center;
+        }
+
+        .card {
+            padding: 0;
+            margin: 15px 10px;
+            border-radius: var(--card_border_radius);
+            cursor: pointer;
+        }
+
+        .card:hover {
+            box-shadow: 0 5px 10px #7b7b7b;
+        }
+
+        .card_small_um {
+            grid-row-end: span var(--card_small);
+            background-color: rgb(184, 44, 212);
+        }
+
+        .card_medium_um {
+            grid-row-end: span var(--card_medium);
+            background-color: rgb(235, 78, 10);
+        }
+
+        .card_large_um {
+            grid-row-end: span var(--card_large);
+            background-color: rgb(21, 239, 32);
+        }
+
+        .card_medium_dois {
+            grid-row-end: span var(--card_medium);
+            background-color: rgb(255, 26, 106);
+        }
+
+        .card_small_dois {
+            grid-row-end: span var(--card_small);
+            background-color: rgb(22, 149, 240);
+        }
+
+        .card_large_dois {
+            grid-row-end: span var(--card_large);
+            background-color: rgb(240, 244, 12);
+        }
+
+        .card_medium_tres {
+            grid-row-end: span var(--card_medium);
+            background-color: rgb(132, 75, 207);
+        }
+
+        .card_small_tres {
+            grid-row-end: span var(--card_small);
+            background-color: rgb(34, 192, 95);
+        }
+
+        .card_medium_quatro {
+            grid-row-end: span var(--card_medium);
+            background-color: rgb(255, 126, 20);
+        }
+
+        .card_small_quatro {
+            grid-row-end: span var(--card_small);
+            background-color: rgb(230, 26, 179);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <p>UniquePlay</p>
+                <!--<a href="#">UniquePlay</a>-->
+            </div><!--logo-->
+
+            <div class="btn-login">
+                <a href="../index.html">
+                    <button>HOME</button>
+                </a>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="center"> <!-- lado esquerdo do site (estilizar) -->
+                <h1>JOGUE, PENSE E BRINQUE!</h1>
+            </div>
+        </section>
+    </main>
+
+    <div class="pin_container">
+        <div onclick="JogoUm()" class="card card_small_um"></div>
+        <div onclick="JogoDois()" class="card card_medium_um"></div>
+        <div onclick="JogoTres()" class="card card_large_um"></div>
+        <div onclick="JogoQuatro()" class="card card_medium_dois"></div>
+        <div onclick="JogoCinco()" class="card card_small_dois"></div>
+        <div onclick="JogoSeis()" class="card card_large_dois"></div>
+        <div onclick="JogoSete()" class="card card_medium_tres"></div>
+        <div onclick="JogoOito()" class="card card_small_tres"></div>
+        <div onclick="JogoNove()" class="card card_medium_quatro"></div>
+        <div onclick="JogoDez()" class="card card_small_quatro"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fontes -->
+    <!-- icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- icones -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <script>
+        function mudarPagina() {
+            window.location.href="./html/signup.html"
+        }
+    </script>
+
+    <title>UniquePlay</title>
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">UniquePlay</a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="html/signin.html">JOGUE AGORA</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-login">
+                <a href="./html/signin.html">
+                    <button>ENTRAR</button>
+                </a>
+            </div><!--btn-login-->
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>DIVERSOS <span>JOGOS</span> PARA VOCÊ</h1>
+                        <h2>APRENDER SE <span>DIVERTINDO</span>!</h2>
+                        <p>A UniquePlay é uma plataforma que disponibiliza jogos educativos e interativos com o intuito de aperfeiçoar o desenvolvimento cognitivo e a habilidade de interação social das crianças com síndrome de Down na educação infantil. 
+
+                        <div class="btn-cadastro">
+                            <button onclick="mudarPagina()">CADASTRE-SE</button>
+                        </div>
+
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/rectangle3.png" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="contatos">
+            <div class="interface">
+                <h2 class="titulo"> MEIOS DE <span>COMUNICAÇÃO.</span></h2>
+                <div class="flex">
+                    <div class="contatos-box">
+                        <i class="bi bi-linkedin"></i>
+                        <h3>Linkedin</h3>
+                        <p>Entre em contato comigo através do LinkedIn: Rafaela Gomes da Silveira. Tire suas dúvidas e mande sugestões, serão de grande importância para o desenvolver do projeto.</p>
+                    </div><!--contatos-->
+
+                    <div class="contatos-box">
+                        <i class="bi bi-envelope"></i>
+                        <h3>E-MAIL</h3>
+                        <p>Entre em contato comigo através do E-mail: gomesgsrafaela@gmail.com. Tire suas dúvidas e mande sugestões, serão de grande importância para o desenvolver do projeto.</p>
+                    </div><!--contatos-box-->
+
+                    <div class="contatos-box">
+                        <i class="bi bi-instagram"></i>
+                        <h3>INSTAGRAM</h3>
+                        <p>Entre em contato comigo através do Instagram: @rafaelagsz. Tire suas dúvidas e mande sugestões, serão de grande importância para o desenvolver do projeto.</p>
+                    </div><!--contatos-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--fim contatos-->
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/rafaela.png" alt="">
+                    </div>
+
+                    <div class="txt-sobre">
+                        <h2>SOBRE A DESENVOLVEDORA <span>RAFAELA GOMES.</span></h2>
+                        <p>Me chamo Rafaela Gomes da Silveira, tenho 17 anos e atualmente resido em Sapucaia do Sul/RS. Sou estudante da escola de Ensino Médio Senac São Leopoldo com foco em Tecnologia. Faço parte do 3° ano e este é o meu projeto de conclusão de curso.</p>
+                        <p></p>
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="projetos">
+            <div class="interface">
+                <h2 class="titulo">DETALHES SOBRE O <span>PROJETO.</span></h2>
+                <div class="flex">
+                    <div class="img-projeto" style="background-image: url(images/motivo.png);">
+                        <div class="overlay">RAZÕES</div>
+                    </div>
+                    <div class="img-projeto" style="background-image: url(images/projeto.png);">
+                        <div class="overlay">PROJETO</div>
+                    </div>
+                    <div class="img-projeto" style="background-image: url(images/linguagem.png);">
+                        <div class="overlay">PROGRAMAÇÃO</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--fim projetos-->
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <h1>UniquePlay</h1>
+                    </div><!--logo-footer-->
+                    
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:gomesgsrafaela@gmail.com">gomesgsrafaela@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+</body>
+</html>
