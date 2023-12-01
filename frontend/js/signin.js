@@ -1,14 +1,19 @@
 let btn = document.querySelector('.fa-eye')
+// variável que recebe querySelector, recebendo a class fa eye (icone)
 
 btn.addEventListener('click', ()=>{
   let inputSenha = document.querySelector('#senha')
+  // adicionei o evento click e uma aero funtion, essa função pega o id senha
   
   if(inputSenha.getAttribute('type') == 'password'){
     inputSenha.setAttribute('type', 'text')
+
   } else {
     inputSenha.setAttribute('type', 'password')
   }
 })
+// if para pegar o tipo de senha e o atributo, se o atributo for senha
+// ele troca o tipo para texto, senão troca para senha, fazendo o efeito aparecer ou não
 
 function entrar(){
   let usuario = document.querySelector('#usuario')

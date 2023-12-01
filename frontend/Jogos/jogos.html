@@ -10,9 +10,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script>
         function mudarPagina() {
-            window.location.href = "./html/signup.html"
+            window.location.href = "./frontend/html/signup.html"
         }
 
         function JogoUm() {
@@ -71,7 +72,7 @@
             margin: 0;
             padding: 0;
             padding-top: 5px;
-            background-image: url(../images/fundo.png);
+            background-image: url(../images/Fundo.png);
             background-size: cover;
             font-family: 'Poppins', sans-serif;
         }
@@ -80,14 +81,22 @@
             padding: 10px 1%;
         }
 
-        header>.interface {
+        header.interface {
             display: flex;
+            align-items: center;
+            
+        }
+
+        .alinhar-acima {
+            /* margin-left: 30px; */
+            display: flex;
+            flex-direction: row;
             align-items: center;
             justify-content: space-between;
         }
 
         .logo {
-            margin-left: 30px;
+            /* justify-self: flex-start; */
             font-size: 2.5rem;
             /* 40px */
             font-weight: bold;
@@ -95,9 +104,10 @@
             color: #000000;
         }
 
-        .btn-login button {
+        .btn-home button {
+            align-self: end;
             padding: 10px 40px;
-            margin-left: 650px;
+            /* margin-left: 650px; */
             font-size: 18px;
             font-weight: 600;
             background-color: #ecb959;
@@ -105,6 +115,19 @@
             border-radius: 30px;
             cursor: pointer;
             transition: .2s;
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 20px;
+
+        }
+
+        .btn-home:hover {
+            box-shadow: 0 5px 10px #856120;
+            border-radius: 30px;
         }
 
         .section {
@@ -136,7 +159,7 @@
         }
 
         .card:hover {
-            box-shadow: 0 5px 10px #7b7b7b;
+            box-shadow: 0 5px 10px #856120;
         }
 
         .card_small_um {
@@ -194,15 +217,26 @@
 <body>
     <header>
         <div class="interface">
-            <div class="logo">
-                <p>UniquePlay</p>
-                <!--<a href="#">UniquePlay</a>-->
-            </div><!--logo-->
 
-            <div class="btn-login">
-                <a href="../index.html">
-                    <button>HOME</button>
-                </a>
+            <div class="alinhar-acima">
+                <div class="logo">
+                    <p>UniquePlay</p>
+                    <!--<a href="#">UniquePlay</a>-->
+                </div><!--logo-->
+    
+                <div class="botoes">
+                    <div class="btn-home">
+                        <a href="../html/index.html">
+                            <button>HOME</button>
+                        </a>
+                    </div>
+                    <div class="btn-home">
+                        <a href="../html/index.html">
+                            <button>SAIR</button>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
             <div class="menu-mobile" id="menu-mobile">
@@ -235,6 +269,7 @@
         <div onclick="JogoNove()" class="card card_medium_quatro"></div>
         <div onclick="JogoDez()" class="card card_small_quatro"></div>
     </div>
+
 </body>
 
 </html>

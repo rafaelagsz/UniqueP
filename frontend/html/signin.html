@@ -10,7 +10,8 @@
         <link
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
+        /> 
+
         <link rel="stylesheet" href="../css/signin.css" />
         <title>Página de Login</title>
       </head>
@@ -23,14 +24,16 @@
             <div id="msgError"></div>
     
             <div class="label-float">
-              <input type="text" id="usuario" paceholder="" required />
+              <input type="text" id="usuario" paceholder="" required /> 
               <label id="userLabel" for="usuario">Usuario</label>
             </div>
-    
+              <!--required obriga o  usuário a preencher todos os campos necessários-->
+
+
             <div class="label-float">
               <input type="password" id="senha" paceholder="" required />
               <label id="senhaLabel" for="senha">Senha</label>
-              <i class="fa fa-eye" aria-hidden="true"></i>
+              <i class="fa fa-eye" aria-hidden="true"></i> 
             </div>
     
             <div class="justify-center">
@@ -49,7 +52,8 @@
             </p>
           </div>
         </div>
-    
+        
+        <script src="../js/fetch.js" defer></script>
         <script src="../js/signin.js"></script>
       </body>
     </html>
